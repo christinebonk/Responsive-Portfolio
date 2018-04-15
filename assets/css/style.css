@@ -109,6 +109,7 @@ h2 {
 
 #about-me figure {
 	float: left;
+	animation: turning 10s infinite;
 }
 
 #about-me figure img {
@@ -206,6 +207,19 @@ footer p {
 	padding-bottom: 10px;
 }
 
+/*Animation*/
+
+@keyframes turning {
+
+	25% {
+		transform: rotate(-5deg);
+	}
+
+	75% {
+		transform: rotate(5deg);
+	}
+}
+
 /*Media Queries*/
 
 @media only screen and (max-width: 980px) {
@@ -288,9 +302,10 @@ footer p {
 
 	.gallery img {
 	width: 100%;
-	height: 100%;
+	height: 100%;	
 
-}
+	}
+
 	/*Footer*/
 
 	footer p {
