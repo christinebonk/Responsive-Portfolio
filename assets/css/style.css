@@ -15,6 +15,7 @@ body {
 .wrapper {
 	max-width: 960px;
 	margin: 0 auto;
+	width: 90%;
 }
 
 /*General Styles
@@ -202,6 +203,7 @@ footer p {
 	position: absolute;
 	right: 50%;
 	bottom: 0;
+	padding-bottom: 10px;
 }
 
 /*Media Queries*/
@@ -210,6 +212,7 @@ footer p {
 
 	header .wrapper {
 		flex-direction: column;
+		width: 100%;
 	}
 
 	nav {
@@ -229,7 +232,24 @@ footer p {
 		text-align: center;
 	}
 
-	.me-image {
+	#aboutme figure {
+		float: none;
+	}
+
+	#about-me figure img {
+	width: 100%;
+	}
+
+	footer p {
+		right: 45%;
+	}
+
+}
+
+@media only screen and (max-width: 980px) {
+
+	section {
+		width: 70%;
 	}
 }
 
