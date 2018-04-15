@@ -208,7 +208,35 @@ footer p {
 
 /*Media Queries*/
 
+@media only screen and (max-width: 980px) {
+
+	/*Page Styles*/
+
+	section {
+		width: 70%;
+	}
+
+		/*Portfolio Styles*/
+
+	#portfolio figure {
+	width: calc(50% - 20px);
+	margin: 10px;
+
+	}	
+}
+
+@media only screen and (max-width: 760px) {
+
+	section {
+		width: 100%;
+	}
+
+}
+
+
 @media only screen and (max-width: 640px) {
+
+	/* Header Styles*/
 
 	header .wrapper {
 		flex-direction: column;
@@ -232,13 +260,38 @@ footer p {
 		text-align: center;
 	}
 
+	section {
+		width: 100%;
+	}
+
+	/*About Me*/
+
 	#aboutme figure {
 		float: none;
 	}
 
 	#about-me figure img {
-	width: 100%;
+		width: 100%;
 	}
+
+	/*Portfolio Styles*/
+
+	#portfolio figure {
+	margin: 10px;
+	width: 100%;
+
+	}	
+
+	.gallery {
+		display: block;
+	}
+
+	.gallery img {
+	width: 100%;
+	height: 100%;
+
+}
+	/*Footer*/
 
 	footer p {
 		right: 45%;
@@ -246,10 +299,5 @@ footer p {
 
 }
 
-@media only screen and (max-width: 980px) {
 
-	section {
-		width: 70%;
-	}
-}
 
